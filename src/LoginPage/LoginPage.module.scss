@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  margin: 0 auto;
+  height: 100vh;
+
+  margin-top: 7rem;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+
+    input {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      height: 2rem;
+      width: 100%;
+      padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .errorMessage {
+      color: red;
+      font-size: 0.8rem;
+    }
+  }
+
+  button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+
+  .loaderContainer {
+    &_visible {
+      animation: fadeIn 0.5s;
+    }
+
+    &_hidden {
+      animation: fadeOut 0.5s;
+      opacity: 0;
+    }
+  }
+}

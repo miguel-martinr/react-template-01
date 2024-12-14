@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+
+  button {
+    background-color: rgb(203, 66, 66, 0);
+    border: none;
+    color: red;
+    text-decoration: underline;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+}
